@@ -1,0 +1,25 @@
+{
+  "name": "aippt",
+  "private": true,
+  "packageManager": "pnpm@10.4.1",
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,green \"pnpm -C apps/server dev\" \"pnpm -C apps/web dev\"",
+    "dev:electron": "concurrently -n server,web,electron -c blue,green,magenta \"pnpm -C apps/server dev\" \"pnpm -C apps/web dev --host 127.0.0.1 --port 5173 --strictPort\" \"pnpm -C apps/electron dev\"",
+    "build": "pnpm -C apps/web build && pnpm -C apps/server build",
+    "build:electron": "pnpm build && pnpm -C apps/electron build",
+    "dist:electron": "pnpm build:electron && pnpm -C apps/electron dist",
+    "start": "pnpm -C apps/server start",
+    "start:electron": "pnpm build:electron && pnpm -C apps/electron start",
+    "typecheck": "pnpm -C apps/web typecheck && pnpm -C apps/server typecheck && pnpm -C apps/electron typecheck"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "electron",
+      "esbuild"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+*.log
+
+# Vite
+apps/web/dist
+apps/web/.vite
+
+# Local config (if used)
+config.local.json
+

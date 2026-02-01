@@ -1,0 +1,10 @@
+{
+  "name": "@aippt/shared",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

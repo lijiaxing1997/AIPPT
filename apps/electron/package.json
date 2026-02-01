@@ -1,0 +1,62 @@
+{
+  "name": "electron-app",
+  "private": true,
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "cross-env ELECTRON_DEV=1 VITE_DEV_SERVER_URL=http://127.0.0.1:5173 pnpm build && cross-env ELECTRON_DEV=1 VITE_DEV_SERVER_URL=http://127.0.0.1:5173 node scripts/run-electron.cjs .",
+    "build": "tsc -p tsconfig.json",
+    "dist": "electron-builder install-app-deps && electron-builder",
+    "start": "node scripts/run-electron.cjs .",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "server": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "cross-env": "^7.0.3",
+    "electron": "^37.3.2",
+    "electron-builder": "^26.0.12",
+    "typescript": "~5.9.3"
+  },
+  "build": {
+    "appId": "com.xinghe.ppt",
+    "productName": "兴河PPT",
+    "directories": {
+      "output": "release"
+    },
+    "asarUnpack": [
+      "**/*.node"
+    ],
+    "extraResources": [
+      {
+        "from": "../web/dist",
+        "to": "web-dist"
+      },
+      {
+        "from": "../../favicon.png",
+        "to": "favicon.png"
+      }
+    ],
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "../../favicon.png"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "../../favicon.png"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "../../favicon.png"
+    }
+  }
+}
