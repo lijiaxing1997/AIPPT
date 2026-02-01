@@ -7,6 +7,7 @@
 ## 重要
 - **Chat API**：需要用到OpenAI范式接口的对话模型，自行选择即可。
 - **Image API**：需要用到生图接口API 目前采用的是`https://api.vectorengine.ai/`。使用请注册并且获取令牌，我看下来就是1毛一张PPT图片。（不是广告）
+- **下载**：我提前打包了windows和mac的版本，可以前往releases直接下载
 
 ## 功能
 
