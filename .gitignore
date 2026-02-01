@@ -7,6 +7,11 @@ dist
 apps/web/dist
 apps/web/.vite
 
+# Electron build artifacts
+apps/electron/release/
+
+# Local tooling
+.venv-git-filter-repo/
+
 # Local config (if used)
 config.local.json
-
