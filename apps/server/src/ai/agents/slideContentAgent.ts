@@ -22,7 +22,7 @@ export async function generateSlideContent(
     "输出必须是严格 JSON（不要 Markdown，不要多余解释），格式：",
     JSON.stringify(
       {
-        bullets: ["要点 1", "要点 2", "要点 3"],
+        bullets: ["内容 1", "内容 2", "内容 3"],
         speakerNotes: "讲稿（可稍长）",
         imageDescription: "用于生成该页视觉画面的描述（插画/图表/场景），要和标题要点一致",
       },
