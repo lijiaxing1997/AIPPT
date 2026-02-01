@@ -251,10 +251,6 @@ export function ProjectLauncherDialog({
               </div>
             ) : (
               <div className="space-y-3 p-4">
-                <div className="rounded-lg border border-border/70 bg-panel2/40 px-3 py-2 text-xs text-muted">
-                  当前项目路径：<span className="font-mono text-[11px] text-text/90">{currentProject.rootPath}</span>
-                </div>
-
                 {currentConfigQuery.isLoading ? (
                   <div className="px-1 py-6 text-sm text-muted">正在加载当前项目配置…</div>
                 ) : currentConfigQuery.isError ? (
