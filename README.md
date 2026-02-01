@@ -2,7 +2,7 @@
 
 本项目是一个**本地化**的 AI PPT 工具：以“项目文件夹”为单位管理内容，AI 生成大纲/风格/每页内容，并调用生图接口生成 16:9 的 PPT 图片；最终可导出 **PDF / PPTX（图片页）**。
 
-![首页](main.png)
+<img src="main.png" width="300" height="200" alt="图片1"><img src="main2.png" width="300" height="200" alt="图片2">
 
 ## 重要
 - **Chat API**：需要用到OpenAI范式接口的对话模型，自行选择即可。
