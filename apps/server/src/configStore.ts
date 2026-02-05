@@ -24,7 +24,7 @@ export const AppConfigSchema = z.object({
       apiKey: z.string(),
       model: z.string(),
     })
-    .default({ baseURL: "", apiKey: "", model: "gpt-4.1-mini" }),
+    .default({ baseURL: "https://api.qhaigc.net/v1", apiKey: "", model: "gpt-4.1-mini" }),
   image: z
     .object({
       baseURL: z.string(),
@@ -36,7 +36,7 @@ export const AppConfigSchema = z.object({
       cacheEnabled: z.boolean().default(false),
     })
     .default({
-      baseURL: "https://api.vectorengine.ai/v1beta/models/gemini-3-pro-image-preview:generateContent",
+      baseURL: "https://api.qhaigc.net/v1beta/models/gemini-3-pro-image-preview:generateContent",
       apiKey: "",
       aspectRatio: "16:9",
       imageSize: "2K",
