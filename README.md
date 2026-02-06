@@ -4,7 +4,7 @@
 
 <img src="main.png" width="400" height="300" alt="图片1">            <img src="main2.png" width="400" height="300" alt="图片2">
 
-## 推荐 API 服务
+## 推荐 API 服务 
 
 <img src="apps/web/public/qhaigc-logo.svg" width="48" height="48" alt="QHAIGC Logo" align="left" style="margin-right: 12px;">
 
@@ -17,8 +17,8 @@
 ---
 
 ## 重要
-- **Chat API**：需要用到OpenAI范式接口的对话模型，自行选择即可。默认采用 `https://api.qhaigc.net`。
-- **Image API**：需要用到生图接口API，默认采用 `https://api.qhaigc.net`。
+- **Chat API**：需要用到OpenAI范式接口的对话模型，自行选择即可。默认采用。
+- **Image API**：需要用到生图接口API，邀请注册链接 `https://api.vectorengine.ai/register?aff=J5iAbH`。
 - **下载**：我提前打包了windows和mac的版本，可以前往releases直接下载
 
 ## 功能
